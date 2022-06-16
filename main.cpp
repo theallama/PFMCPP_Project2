@@ -60,25 +60,25 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-  	int distance = 3;
-	int length = 4;
-	int year = 2022;
-
-	bool isNumber = false;
-	bool hasFever = false;
-	bool ateLunch = true;
-
-	float timeLeft = 876.f;
-	float bar = 2.5f;
-	float num = 3.24343f;
-
-	double timeInSeconds = 3.912348239293;
-	double savings = 2.3321;
-	double age = 3.5;
-
-	char petName = 'M';
-	char myGrade = 'B';
-	char greetings = 'H';
+    int distance = 3;
+    int length = 4;
+    int year = 2022;
+    
+    bool isNumber = false;
+    bool hasFever = false;
+    bool ateLunch = true;
+    
+    float timeLeft = 876.f;
+    float bar = 2.5f;
+    float num = 3.24343f;
+    
+    double timeInSeconds = 3.912348239293;
+    double savings = 2.3321;
+    double age = 3.5;
+    
+    char petName = 'M';
+    char myGrade = 'B';
+    char greetings = 'H';
 
 	ignoreUnused(
 		number,
@@ -117,33 +117,33 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 bool isNumber(int firstParam, int secondParam = 2)
 {
-	ignoreUnused(firstParam, secondParam);
-	return {};
+    ignoreUnused(firstParam, secondParam);
+    return {};
 }
 /*
  2)
  */
 char currentTime(int hr = 2, int min = 3)
 {
-	ignoreUnused(hr, min);
-	return {};
+    ignoreUnused(hr, min);
+    return {};
 }
 /*
  3)
  */
 int daysLeft(int todayDate, int targetDate = 31)
 {
-	ignoreUnused(todayDate, targetDate);
-	return {};
+    ignoreUnused(todayDate, targetDate);
+    return {};
 }
 /*
  4)
  */
 bool isCompleted(char task = 'm',
-				 bool isDone = true)
+                 bool isDone = true)
 {
-	ignoreUnused(task, isDone);
-	return {};
+    ignoreUnused(task, isDone);
+    return {};
 }
 /*
  5)
@@ -151,50 +151,50 @@ bool isCompleted(char task = 'm',
 char sayHello(char greetings = 'h', 
               char userName = 'J')
 {
-	ignoreUnused(greetings, userName);
-	return {};
+    ignoreUnused(greetings, userName);
+    return {};
 }
 /*
  6)
  */
 float isInStock(bool yes, int quantity = 2)
 {
-	ignoreUnused(yes, quantity );
-	return {};
+    ignoreUnused(yes, quantity );
+    return {};
 }
 /*
  7)
  */
 float itemTotal(char item =  'a',
-				int quantity = 0,
-				float price  = 1.03f )
+                int quantity = 0,
+                float price  = 1.03f )
 {
-	ignoreUnused(item, quantity, price);
-	return {};
+    ignoreUnused(item, quantity, price);
+    return {};
 }
 /*
  8)
  */
 float sumOfInt (int a = 2, int b = 3)
 {
-	 ignoreUnused(a, b);
-	 return {};
+    ignoreUnused(a, b);
+    return {};
 }
 /*
  9)
  */
 char printName  (char userName = 'J')
 {
-	 ignoreUnused(userName);
-	 return {};
+    ignoreUnused(userName);
+    return {};
 }
 /*
  10)
  */
 bool isCat (char noise = 'm', bool isFluffy = true)
 {
-	ignoreUnused(noise, isFluffy);
-	return {};
+    ignoreUnused(noise, isFluffy);
+    return {};
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH

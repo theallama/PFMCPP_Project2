@@ -76,9 +76,9 @@ void variableDeclarations()
 	double savings = 2.3321;
 	double age = 3.5;
 
-	char petName = 'Mittens';
+	char petName = 'M';
 	char myGrade = 'B';
-	char greetings = 'Hello';
+	char greetings = 'H';
 
 	ignoreUnused(
 		number,
@@ -98,7 +98,7 @@ void variableDeclarations()
 		petName,
 		myGrade,
 		greetings); // passing each variable declared to the 
-					// function  
+    // function  
 }
 
 /*
@@ -139,8 +139,8 @@ int daysLeft(int todayDate, int targetDate = 31)
 /*
  4)
  */
-bool isCompleted(char task = "makeDinner",
-				 bool isDone = "not completed")
+bool isCompleted(char task = 'm',
+				 bool isDone = true)
 {
 	ignoreUnused(task, isDone);
 	return {};
@@ -148,12 +148,12 @@ bool isCompleted(char task = "makeDinner",
 /*
  5)
  */
-char sayHello(char greetings = "Hi!", 
-              char userName = "John")
+char sayHello(char greetings = 'h', 
+              char userName = 'J')
 {
 	ignoreUnused(greetings, userName);
 	return {};
-});
+}
 /*
  6)
  */
@@ -165,7 +165,7 @@ float isInStock(bool yes, int quantity = 2)
 /*
  7)
  */
-float itemTotal(char item =  "apple",
+float itemTotal(char item =  'a',
 				int quantity = 0,
 				float price  = 1.03f )
 {
@@ -183,7 +183,7 @@ float sumOfInt (int a = 2, int b = 3)
 /*
  9)
  */
-char printName  (char userName = "John")
+char printName  (char userName = 'J')
 {
 	 ignoreUnused(userName);
 	 return {};
@@ -191,7 +191,7 @@ char printName  (char userName = "John")
 /*
  10)
  */
-bool isCat (char noise = "meow", bool isFluffy = true)
+bool isCat (char noise = 'm', bool isFluffy = true)
 {
 	ignoreUnused(noise, isFluffy);
 	return {};
@@ -219,19 +219,21 @@ int main()
     //3)
     auto countdownToBirthday = daysLeft(2, 31);
     //4)
-    auto toDo = isCompleted("makeDinner", "not completed");
+    auto toDo = isCompleted('a', false);
     //5)
-    auto greetinsHeader = sayHello("Hi!", "John");
+    auto greetinsHeader = sayHello('H', 'J');
     //6)
     auto apples = isInStock(true, 2);
     //7)
-    auto appleTotal = itemTotal("apple", 1, 1.03f);
+    auto appleTotal = itemTotal('a', 1, 1.03f);
     //8)
     auto ageTotal = sumOfInt(5, 6);
     //9)
-    auto getUserName = printName("John");
+    auto getUserName = printName('J');
     //10)
-    auto myPet = isCat("moo", false);
+    auto myPet = isCat('m', false);
+
+    ignoreUnused(myPet, getUserName, ageTotal, appleTotal, apples, greetinsHeader, toDo, countdownToBirthday, countdownToBirthday, getTime, twoInputs, carRented);
     
     ignoreUnused(carRented);
     std::cout << "good to go!" << std::endl;

@@ -149,7 +149,7 @@ bool isCompleted(char task = "makeDinner",
  5)
  */
 char sayHello(char greetings = "Hi!", 
-              userName = "John")
+              char userName = "John")
 {
 	ignoreUnused(greetings, userName);
 	return {};
